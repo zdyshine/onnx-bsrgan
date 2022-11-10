@@ -2,6 +2,7 @@
 * `onnx_test.cpp`: main C++ file
 * `CMakeLists.txt`
 * `flake.nix` and `default.nix` for reproducible builds
+* `build.sh` for non-nix builds
 * `cat_small.jpg` original input file
 * `cat_sr.png` C++ ONNX output
 * `cat_sr_pytorch.png` PyTorch and Python ONNX output
@@ -32,6 +33,10 @@ cmake --build build
 ```
 
 # Run instructions
+```
+<executable_name> <onnx-model> <source-img> <dest-img>
+```
+for example:
 ```
 <executable_name> bsrgan-pretrained.onnx cat_small.jpg cat_sr.png
 ```
