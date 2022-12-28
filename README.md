@@ -1,3 +1,14 @@
+# built by zhangdy    
+生成可执行二进制文件 onnx_test    
+g++ onnx_test.cpp -o onnx_test \
+-I /workspace/mgtvdeploy_sdk/third_libs/install/onnxruntime/include/ \
+-I /workspace/mgtvdeploy_sdk/third_libs/install/opencv/include/ \
+-L /workspace/mgtvdeploy_sdk/third_libs/install/opencv/lib64/  \
+-L /workspace/mgtvdeploy_sdk/third_libs/install/onnxruntime/lib \
+-lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_ml -lopencv_video -lopencv_videoio -lopencv_imgcodecs \
+-lonnxruntime
+#############---------------------------------------------------------------------------------------------------
+
 # Repo contents:
 * `onnx_test.cpp`: main C++ file
 * `CMakeLists.txt`
